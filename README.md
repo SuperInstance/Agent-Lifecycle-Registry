@@ -1,11 +1,14 @@
 # Agent Lifecycle Registry
 
-Centralized registry for managing AI agent lifecycles including creation, configuration, monitoring, and retirement. Provides a single source of truth for fleet-wide agent state.
+**Design document only. Not yet implemented.**
 
-## Features
+This describes how agent lifecycle tracking would work in the fleet — registration, state management, health monitoring, and retirement across all Cocapn agents.
+
+## Proposed Scope
+
 - Agent registration and discovery
-- Lifecycle state management
-- Health tracking and auto-recovery
+- Lifecycle state machine (create → configure → active → monitor → retire)
+- Health tracking with auto-recovery signalling
+- Single source of truth for fleet-wide agent state
 
-## License
-MIT
+Nothing here is running yet. When implementation starts, this repo will hold the spec, schema, and stubs.
